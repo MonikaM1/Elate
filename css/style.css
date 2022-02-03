@@ -201,14 +201,19 @@ footer {
 .contacts span {
     font-weight: bold;
 }
+.icons{
+    margin-bottom: 10px;
+}
 .icons i{
     color:#fff;
-    font-size: 22px;
+}
+.icons a:hover{
+    opacity: 70%;
 }
 .icons a{
-    width: 40px;
-    height: 40px;
-    background: #6b6a6a;
+    width: 30px;
+    height: 30px;
+    background:#626777;;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -417,8 +422,9 @@ footer {
         padding: unset;
     }
     button{
-        width: 100px;
-        padding: 10px;
+        width: 95px;
+        padding: 5px;
+        font-size: 10px;
     }
     .offers{
         display: flex;
@@ -441,12 +447,14 @@ footer {
         position:absolute;
         left: 30px;
         top: 20px;
+
     }
 
         .txt p{
-            color: black;
-            font-weight: bold;
+            color: white;
+            line-height: 15px;
         }
+
         .icons i{
             font-size: 16px;
         }
