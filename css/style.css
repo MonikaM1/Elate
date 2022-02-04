@@ -13,6 +13,10 @@
     url('../font/Montserrat-Regular.ttf') format('woff');
 }
 
+.header_top{
+    position: fixed;
+    z-index: 2;
+}
 header, footer {
     font-size: 16px;
 }
@@ -344,7 +348,7 @@ footer {
         font-size: 8px;
     }
     .img{
-        max-width: 400px;
+        max-width: 320px;
     }
 
     .information {
@@ -417,14 +421,11 @@ footer {
     .welcome p{
         padding: 40px;
     }
-
-    .container {
-        padding: unset;
-    }
     button{
         width: 95px;
         padding: 5px;
         font-size: 10px;
+        margin-top:5px;
     }
     .offers{
         display: flex;
@@ -445,14 +446,15 @@ footer {
     }
     .txt{
         position:absolute;
-        left: 30px;
-        top: 20px;
+        left: -60px;
+        top: 5px;
 
     }
 
         .txt p{
             color: white;
             line-height: 15px;
+            margin-top: 5px;
         }
 
         .icons i{
