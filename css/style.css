@@ -13,10 +13,11 @@
     url('../font/Montserrat-Regular.ttf') format('woff');
 }
 
-.header_top{
-    position: fixed;
-    z-index: 2;
+.header_top {
+    /*position: fixed;*/
+    /*z-index: 2;*/
 }
+
 header, footer {
     font-size: 16px;
 }
@@ -121,7 +122,8 @@ main {
     text-align: center;
     padding: 80px;
 }
-.apartment, .house{
+
+.apartment, .house {
     margin-bottom: 80px;
 }
 
@@ -131,7 +133,8 @@ main {
     flex-direction: column;
     justify-content: center;
 }
-.txt p,button{
+
+.txt p, button {
     margin-top: 20px;
 }
 
@@ -153,16 +156,16 @@ main {
 
 .img {
     border-radius: 10px;
-    width: 500px;
+    width: 400px;
     height: 250px;
     cursor: pointer;
-    overflow: hidden;
 }
 
-.img img{
+.img img {
     width: 100%;
     border-radius: 20px;
 }
+
 .c_black {
     color: #000000;
 
@@ -177,6 +180,7 @@ button {
     cursor: pointer;
     transition: .5s;
     width: 130px;
+    color: #000000;
 }
 
 button:hover {
@@ -205,19 +209,23 @@ footer {
 .contacts span {
     font-weight: bold;
 }
-.icons{
+
+.icons {
     margin-bottom: 10px;
 }
-.icons i{
-    color:#fff;
+
+.icons i {
+    color: #fff;
 }
-.icons a:hover{
+
+.icons a:hover {
     opacity: 70%;
 }
-.icons a{
+
+.icons a {
     width: 30px;
     height: 30px;
-    background:#626777;;
+    background: #626777;;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -344,10 +352,12 @@ footer {
         display: unset;
 
     }
-    main{
+
+    main {
         font-size: 8px;
     }
-    .img{
+
+    .img {
         max-width: 320px;
     }
 
@@ -376,7 +386,8 @@ footer {
     .hidden_menu i {
         display: block;
     }
-    .hidden_menu:hover .nav_menu_hidden{
+
+    .hidden_menu:hover .nav_menu_hidden {
         display: block;
     }
 
@@ -418,49 +429,63 @@ footer {
         border-radius: 3px;
         background: #f4f4f4;
     }
-    .welcome p{
+
+    .welcome p {
         padding: 40px;
     }
-    button{
+
+    button {
         width: 95px;
         padding: 5px;
         font-size: 10px;
-        margin-top:5px;
+        margin-top: 5px;
     }
-    .offers{
+
+    .offers {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
     }
-    .offer{
+
+    .offer {
         position: relative;
         margin-bottom: unset;
     }
+
     .house .txt {
         z-index: 1;
         left: 120px;
     }
-    .img{
+
+    .img {
         opacity: 60%;
         filter: brightness(0.5);
     }
-    .txt{
-        position:absolute;
+
+    .txt {
+        position: absolute;
         left: -60px;
         top: 5px;
 
     }
 
-        .txt p{
-            color: white;
-            line-height: 15px;
-            margin-top: 5px;
-        }
-
-        .icons i{
-            font-size: 16px;
-        }
+    .txt p {
+        color: white;
+        line-height: 15px;
+        margin-top: 5px;
     }
+
+    .icons i {
+        font-size: 16px;
+    }
+}
+.mr_r20{
+    margin-right: 30px;
+}
+.mr_l20{
+    margin-left: 30px;
+}
+
 
 
 
