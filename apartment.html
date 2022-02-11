@@ -13,28 +13,26 @@
 </head>
 <body>
 <!---------------------------------header start----------------------------------------------------->
-<header class="df fd_col mr_b50">
-    <div class="header_top df jc_center">
-        <div class="container ">
+<header>
+    <div class="container ">
+        <div class="header_top df jc_between ">
+            <div class="logo">
+                <a href="index.html"> <img src="images/elate_new_logo.png" alt=""></a>
+            </div>
             <div class="header_menu df ai_center">
-                <div class="logo">
-                    <a href="index.html"> <img src="images/elate_new_logo.png" alt=""></a>
-                </div>
-                <div class="nav_menu">
-                    <nav class="df ai_center">
-                        <ul class="df">
-                            <li><a href="">HOME</a></li>
-                            <li><a href="">REAL ESTATE</a></li>
-                            <li><a href="">OUR SERVICES</a></li>
-                            <li><a href="">CONTACT US</a></li>
-                            <li><a href="">ABOUT US</a></li>
-                            <li><a href="">GUEST BOOK</a></li>
-                            <li><a href="">FAQ</a></li>
-                            <li><a href="">ARMENIA</a></li>
-                            <li><a id="usd" href="">USD</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                <nav class="menu df ai_center">
+                    <ul class="df">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">REAL ESTATE</a></li>
+                        <li><a href="">OUR SERVICES</a></li>
+                        <li><a href="">CONTACT US</a></li>
+                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="">GUEST BOOK</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">ARMENIA</a></li>
+                        <li class="usd"><a id="usd" href="">USD</a></li>
+                    </ul>
+                </nav>
                 <div class="hidden_menu">
                     <i class="fas fa-bars"></i>
                     <div class="nav_menu_hidden">
@@ -61,7 +59,7 @@
 <main>
     <div class="wrapper">
         <div class="container">
-            <div class="row df jc_between mr_b50">
+            <div class="row df jc_between">
                 <div class="left_side">
                     <ul class="df jc_between ai_center">
                         <li class="mr_r30"><a href="">Apartments</a></li>
@@ -81,217 +79,234 @@
                     </select>
                 </div>
             </div>
-            <div class="filters df jc_between mr_b50">
-                <div class="container1 df">
-                    <div class="col">
-                        <div class="renting w140 mr_b20">
-                            <p>Renting</p>
-                            <select class="select" name="rent" id="rent">
-                                <option value="daily">Daily</option>
-                                <option value="weekly">Weekly</option>
-                                <option value="monthly" selected>Monthly</option>
-                            </select>
+            <div class="filters">
+                <form action="#">
+                    <div class="form">
+                        <div class="row1 jc_between df">
+                            <div class="renting">
+                                <p>Renting</p>
+                                <select class="select" name="rent" id="rent">
+                                    <option value="daily">Daily</option>
+                                    <option value="weekly">Weekly</option>
+                                    <option value="monthly" selected>Monthly</option>
+                                </select>
+                            </div>
+                            <div class="city">
+                                <p>City</p>
+                                <select class="select" id="city" name="city">
+                                    <option value="Yerevan" selected>Yerevan</option>
+                                    <option value="Gyumri" selected>Gyumri</option>
+                                    <option value="Vanadzor" selected>Vanadzor</option>
+                                </select>
+                            </div>
+                            <div class="region">
+                                <p>Region</p>
+                                <select class="select" name="region" id="region">
+                                    <option value="select" hidden> Select</option>
+
+                                    <optgroup label="Yerevan">
+                                        <option value="Avan">Avan</option>
+                                        <option value="Nor-Norq">Nor-Norq</option>
+                                        <option value="Ajapnyak">Ajapnyak</option>
+                                    </optgroup>
+                                    <option value="Shirak">Shirak</option>
+                                    <option value="Lori">Lori</option>
+                                </select>
+                            </div>
+                            <div class="rooms">
+                                <p>Rooms</p>
+                                <select class="select" name="rooms" id="rooms">
+                                    <option value="select" hidden>Select</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="search">
+                                <button>SEARCH</button>
+                            </div>
                         </div>
-                        <div class="price w140 ">
-                            <p>Price</p>
-                            <div class="df">
+                        <div class="row1 jc_between df">
+                            <div class="price">
+                                <p>Price</p>
                                 <div class="df">
-                                    <input type="number" min="100" placeholder="100$">
+                                    <div class="df">
+                                        <input type="number" min="100" placeholder="100$">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
-                    <div class="col df fd_col jc_between">
-                        <div class="city w140 mr_b20">
-                            <p>City</p>
-                            <select class="select" id="city" name="city">
-                                <option value="Yerevan" selected>Yerevan</option>
-                                <option value="Gyumri" selected>Gyumri</option>
-                                <option value="Vanadzor" selected>Vanadzor</option>
-                            </select>
-                        </div>
-                        <div class="w140">
-                            <input type="number" min="100" placeholder="100$">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="region w140 mr_b20">
-                            <p>Region</p>
-                            <select class="select" name="region" id="region">
-                                <option value="select" hidden> Select</option>
-
-                                <optgroup label="Yerevan">
-                                    <option value="Avan">Avan</option>
-                                    <option value="Nor-Norq">Nor-Norq</option>
-                                    <option value="Ajapnyak">Ajapnyak</option>
-                                </optgroup>
-                                <option value="Shirak">Shirak</option>
-                                <option value="Lori">Lori</option>
-                            </select>
-                        </div>
-                        <div class="code w140">
-                            <p>Code</p>
-                            <input type="text" placeholder="REUY345">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="rooms w140 mr_b20">
-                            <p>Rooms</p>
-                            <select class="select" name="rooms" id="rooms">
-                                <option value="select" hidden>Select</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </div>
-                        <div class="layout w140">
-                            <p>Layout</p>
-                            <select class="select" name="Layout" id="layout">
-                                <option value="select" hidden>Select</option>
-                                <option value="New building">New building</option>
-                                <option value="Khrushchov project">Khrushchov project</option>
-                                <option value="Stalin project">Stalin project</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="search">
-                    <button class=>SEARCH</button>
-                </div>
-            </div>
-            <div class="apartments_details">
-                <div class="apartment_description">
-                    <div class="df jc_between padding20 ">
-                        <img class="img" src="images/lounge.jpg" alt="">
-                        <div class="description df fd_col">
-                            <div class=" street mr_b20">
-                                <h2>Bayron</h2>
-                                <p> Yerevan/Yerevan</p>
+                            <div class="df">
+                                <input type="number" min="100" placeholder="100$">
                             </div>
-
-                            <div class="df jc_between">
-                                <div class="Features ">
-                                    <span class="mr_b20">Features</span>
-                                    <p>3 bedrooms</p>
-                                    <p>5/3 floor</p>
-                                    <p>200sqm</p>
-                                    <p>New building</p>
-                                </div>
-                                <div class="app_price ">
-                                    <span>Monthly:</span>
-                                    <p class="color">2900 USD</p>
-                                </div>
-                                <div class="code_N">
-                                   <p><span>Code:</span>RCEA3256</p>
-                                    <p><span>Updated:</span>14.09.21</p>
-                                </div>
+                            <div class="code">
+                                <p>Code</p>
+                                <input type="text" placeholder="REUY345">
                             </div>
-                            <div class="rent df">
-                                <button>RENT</button>
+                            <div class="layout w140">
+                                <p>Layout</p>
+                                <select class="select" name="Layout" id="layout">
+                                    <option value="select" hidden>Select</option>
+                                    <option value="New building">New building</option>
+                                    <option value="Khrushchov project">Khrushchov project</option>
+                                    <option value="Stalin project">Stalin project</option>
+                                </select>
+                            </div>
+                            <div>
+
                             </div>
                         </div>
                     </div>
-
-                </div>
-                <div class="apartment_description">
-                    <div class="df jc_between padding20 ">
-                        <img class="img" src="images/logan_apartments.6.jpg" alt="">
-                        <div class="description df fd_col">
-                            <div class=" street mr_b20">
-                                <h2>Bayron</h2>
-                                <p> Yerevan/Yerevan</p>
+                </form>
+                <div class="apartments_details">
+                    <div class="apartment_description">
+                        <div class="description_par df">
+                            <div class="img">
+                                <img src="images/lounge.jpg" alt="">
+                            </div>
+                            <div class="w100">
+                                <div class="description df fd_col jc_center ">
+                                    <div class=" street">
+                                        <h2>Bayron</h2>
+                                        <p> Yerevan/Yerevan</p>
+                                    </div>
+                                    <div class=" descr_txt df jc_between">
+                                        <div class="Features ">
+                                            <span>Features</span>
+                                            <p>3 bedrooms</p>
+                                            <p>5/3 floor</p>
+                                            <p>200sqm</p>
+                                            <p>New building</p>
+                                        </div>
+                                        <div class="app_price ">
+                                            <span>Monthly:</span>
+                                            <p class="color">2900 USD</p>
+                                        </div>
+                                        <div class="code_N">
+                                            <p><span>Code:</span>RCEA3256</p>
+                                            <p><span>Updated:</span>14.09.21</p>
+                                        </div>
+                                    </div>
+                                    <div class="rent df">
+                                        <button>RENT</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="df jc_between">
-                                <div class="Features ">
-                                    <span class="mr_b20">Features</span>
-                                    <p>3 bedrooms</p>
-                                    <p>5/3 floor</p>
-                                    <p>200sqm</p>
-                                    <p>New building</p>
-                                </div>
-                                <div class="app_price ">
-                                    <span>Monthly:</span>
-                                    <p class="color">2900 USD</p>
-                                </div>
-                                <div class="code_N">
-                                    <p><span>Code:</span>RCEA3256</p>
-                                    <p><span>Updated:</span>14.09.21</p>
-                                </div>
-                            </div>
-                            <div class="rent df">
-                                <button>RENT</button>
-                            </div>
                         </div>
+
                     </div>
-
-                </div>
-                <div class="apartment_description">
-                    <div class="df jc_between padding20 ">
-                        <img class="img" src="images/Model_1_Bdrm_K1A8100_phwqml.jpg" alt="">
-                        <div class="description df fd_col">
-                            <div class=" street mr_b20">
-                                <h2>Bayron</h2>
-                                <p> Yerevan/Yerevan</p>
+                    <div class="apartment_description">
+                        <div class="description_par df">
+                            <div class="img">
+                                <img src="images/logan_apartments.6.jpg" alt="">
+                            </div>
+                            <div class="w100">
+                                <div class="description df fd_col jc_center ">
+                                    <div class=" street">
+                                        <h2>Bayron</h2>
+                                        <p> Yerevan/Yerevan</p>
+                                    </div>
+                                    <div class=" descr_txt df jc_between">
+                                        <div class="Features ">
+                                            <span>Features</span>
+                                            <p>3 bedrooms</p>
+                                            <p>5/3 floor</p>
+                                            <p>200sqm</p>
+                                            <p>New building</p>
+                                        </div>
+                                        <div class="app_price ">
+                                            <span>Monthly:</span>
+                                            <p class="color">2900 USD</p>
+                                        </div>
+                                        <div class="code_N">
+                                            <p><span>Code:</span>RCEA3256</p>
+                                            <p><span>Updated:</span>14.09.21</p>
+                                        </div>
+                                    </div>
+                                    <div class="rent df">
+                                        <button>RENT</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="df jc_between">
-                                <div class="Features ">
-                                    <span class="mr_b20">Features</span>
-                                    <p>3 bedrooms</p>
-                                    <p>5/3 floor</p>
-                                    <p>200sqm</p>
-                                    <p>New building</p>
-                                </div>
-                                <div class="app_price ">
-                                    <span>Monthly:</span>
-                                    <p class="color">2900 USD</p>
-                                </div>
-                                <div class="code_N">
-                                    <p><span>Code:</span>RCEA3256</p>
-                                    <p><span>Updated:</span>14.09.21</p>
-                                </div>
-                            </div>
-                            <div class="rent df">
-                                <button>RENT</button>
-                            </div>
                         </div>
+
                     </div>
-
-                </div>
-                <div class="apartment_description">
-                    <div class="df jc_between padding20 ">
-                        <img class="img" src="images/app.png" alt="">
-                        <div class="description df fd_col">
-                            <div class=" street mr_b20">
-                                <h2>Bayron</h2>
-                                <p> Yerevan/Yerevan</p>
+                    <div class="apartment_description">
+                        <div class="description_par df">
+                            <div class="img">
+                                <img src="images/lounge.jpg" alt="">
+                            </div>
+                            <div class="w100">
+                                <div class="description df fd_col jc_center ">
+                                    <div class=" street">
+                                        <h2>Bayron</h2>
+                                        <p> Yerevan/Yerevan</p>
+                                    </div>
+                                    <div class=" descr_txt df jc_between">
+                                        <div class="Features ">
+                                            <span>Features</span>
+                                            <p>3 bedrooms</p>
+                                            <p>5/3 floor</p>
+                                            <p>200sqm</p>
+                                            <p>New building</p>
+                                        </div>
+                                        <div class="app_price ">
+                                            <span>Monthly:</span>
+                                            <p class="color">2900 USD</p>
+                                        </div>
+                                        <div class="code_N">
+                                            <p><span>Code:</span>RCEA3256</p>
+                                            <p><span>Updated:</span>14.09.21</p>
+                                        </div>
+                                    </div>
+                                    <div class="rent df">
+                                        <button>RENT</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="df jc_between">
-                                <div class="Features ">
-                                    <span class="mr_b20">Features</span>
-                                    <p>3 bedrooms</p>
-                                    <p>5/3 floor</p>
-                                    <p>200sqm</p>
-                                    <p>New building</p>
-                                </div>
-                                <div class="app_price ">
-                                    <span>Monthly:</span>
-                                    <p class="color">2900 USD</p>
-                                </div>
-                                <div class="code_N">
-                                    <p><span>Code:</span>RCEA3256</p>
-                                    <p><span>Updated:</span>14.09.21</p>
-                                </div>
-                            </div>
-                            <div class="rent df">
-                                <button>RENT</button>
-                            </div>
                         </div>
+
+                    </div>
+                    <div class="apartment_description">
+                        <div class="description_par df">
+                            <div class="img">
+                                <img src="images/logan_apartments.6.jpg" alt="">
+                            </div>
+                            <div class="w100">
+                                <div class="description df fd_col jc_center ">
+                                    <div class=" street">
+                                        <h2>Bayron</h2>
+                                        <p> Yerevan/Yerevan</p>
+                                    </div>
+                                    <div class=" descr_txt df jc_between">
+                                        <div class="Features ">
+                                            <span>Features</span>
+                                            <p>3 bedrooms</p>
+                                            <p>5/3 floor</p>
+                                            <p>200sqm</p>
+                                            <p>New building</p>
+                                        </div>
+                                        <div class="app_price ">
+                                            <span>Monthly:</span>
+                                            <p class="color">2900 USD</p>
+                                        </div>
+                                        <div class="code_N">
+                                            <p><span>Code:</span>RCEA3256</p>
+                                            <p><span>Updated:</span>14.09.21</p>
+                                        </div>
+                                    </div>
+                                    <div class="rent df">
+                                        <button>RENT</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
@@ -348,6 +363,5 @@
 
     </div>
 </footer>
-
 </body>
 </html>

@@ -2,21 +2,29 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat-Regular';
     font-style: normal;
     color: #626777;
 }
 
+*::before, *::after {
+    box-sizing: border-box;
+}
+
 @font-face {
-    font-family: 'Lato Regular';
+    font-family: 'Montserrat-Regular';
     src: url('../font/Montserrat-Regular.ttf') format('woff2'),
     url('../font/Montserrat-Regular.ttf') format('woff');
 }
 
-.header_top {
-    /*position: fixed;*/
-    /*z-index: 2;*/
+header {
+    background-color: #f4f4f4;
 }
+
+/*.header_top {*/
+/*    position: fixed;*/
+/*    z-index: 2;*/
+/*}*/
 
 header, footer {
     font-size: 16px;
@@ -31,13 +39,16 @@ li {
     list-style: none;
 }
 
-.nav_menu nav li {
-    margin-right: 25px;
-    position: relative;
+header nav li {
+    margin-left: 20px;
 }
 
-nav li:last-child {
-    margin-right: unset;
+nav li:first-child {
+    margin-left: unset;
+}
+
+.usd {
+    position: relative;
 }
 
 nav li a {
@@ -75,10 +86,6 @@ nav li a:hover {
     margin: 0 auto;
 }
 
-.logo {
-    width: 150px;
-    margin-right: 114px;
-}
 
 .logo img {
     width: 100%;
@@ -91,14 +98,9 @@ nav li a:hover {
     width: 30px;
     height: 30px;
     position: absolute;
-    right: 17px;
-    top: 3px;
+    right: 15px;
+    top: 2px;
 
-}
-
-.header_top {
-    width: 100%;
-    background-color: #f4f4f4;
 }
 
 .hidden_menu i {
@@ -128,7 +130,7 @@ main {
 }
 
 .txt {
-    width: 50%;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,8 +158,8 @@ main {
 
 .img {
     border-radius: 10px;
-    width: 400px;
-    height: 250px;
+    width: 500px;
+    height: 100%;
     cursor: pointer;
 }
 
@@ -192,6 +194,10 @@ footer {
     background-color: #f4f4f4;
 }
 
+.information > div {
+    line-height: 25px;
+}
+
 .footer_nav_menu nav {
     width: 300px;
     justify-content: space-between;
@@ -208,10 +214,6 @@ footer {
 
 .contacts span {
     font-weight: bold;
-}
-
-.icons {
-    margin-bottom: 10px;
 }
 
 .icons i {
@@ -239,7 +241,7 @@ footer {
 
 @media screen and (min-width: 1024px)and (max-width: 1599px) {
     .container {
-        max-width: 900px;
+        max-width: 970px;
 
     }
 
@@ -252,13 +254,8 @@ footer {
         font-size: 12px;
     }
 
-    main {
-        font-size: 11px;
-    }
-
     button {
         padding: 13px;
-        width: 100px;
     }
 
     .footer_logo {
@@ -302,8 +299,8 @@ footer {
         font-size: 11px;
     }
 
-    main {
-        font-size: 10px;
+    .txt {
+        width: 350px;
     }
 
     .logo {
@@ -322,13 +319,11 @@ footer {
         top: 0;
     }
 
-    .img {
-        background-position: center;
-        width: 70%;
+    .txt_width {
+        width: 100%;
     }
 
     button {
-        width: 100px;
         padding: 10px;
     }
 
@@ -347,18 +342,12 @@ footer {
 
 @media screen and (min-width: 320px)and (max-width: 767px) {
 
-    .footer_nav_menu nav {
-        width: fit-content;
-        display: unset;
-
+    .header_top {
+        justify-content: space-around;
     }
 
-    main {
-        font-size: 8px;
-    }
-
-    .img {
-        max-width: 320px;
+    .menu {
+        display: none;
     }
 
     .information {
@@ -378,10 +367,19 @@ footer {
         margin-bottom: 20px;
     }
 
+    .hidden_menu i {
+        display: block;
+    }
+
     .hidden_menu {
         background-color: #f4f4f4;
         cursor: pointer;
     }
+
+    .nav_menu_hidden nav li {
+        margin-left: unset;
+    }
+
 
     .hidden_menu i {
         display: block;
@@ -395,17 +393,8 @@ footer {
         display: none;
     }
 
-    header .logo {
-        width: 100px;
-    }
-
     .nav_menu_hidden {
         position: relative;
-        transition: .7s;
-    }
-
-    .hidden_menu:hover .nav_menu_hidden {
-        display: block;
         transition: .7s;
     }
 
@@ -449,12 +438,12 @@ footer {
 
     .offer {
         position: relative;
-        margin-bottom: unset;
+        margin-bottom: 20px;
     }
 
     .house .txt {
         z-index: 1;
-        left: 120px;
+        left: 99px;
     }
 
     .img {
@@ -464,27 +453,23 @@ footer {
 
     .txt {
         position: absolute;
-        left: -60px;
+        left: 25px;
         top: 5px;
 
     }
 
     .txt p {
         color: white;
-        line-height: 15px;
+        line-height: 30px;
         margin-top: 5px;
     }
 
     .icons i {
         font-size: 16px;
     }
+
 }
-.mr_r20{
-    margin-right: 30px;
-}
-.mr_l20{
-    margin-left: 30px;
-}
+
 
 
 
