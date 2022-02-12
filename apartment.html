@@ -62,21 +62,24 @@
             <div class="row df jc_between">
                 <div class="left_side">
                     <ul class="df jc_between ai_center">
-                        <li class="mr_r30"><a href="">Apartments</a></li>
+                        <li class="hover mr_r30"><a href="">Apartments</a></li>
                         <li class="mr_r30"><a href="">Houses</a></li>
                         <li><a href="">Commercial</a></li>
                     </ul>
                 </div>
                 <div class="right_side df">
                     <ul class="df mr ai_center">
-                        <li><a href="">For rent</a></li>
+                        <li class="hover"><a href="">For rent</a></li>
                         <li class="mr_l30"><a href="">For sale</a></li>
                     </ul>
-                    <select class="currency mr_l30" name="" id="">
-                        <option value="USD">USD</option>
-                        <option value="AMD" selected>AMD</option>
-                        <option value="RU">RU</option>
-                    </select>
+                    <label for="currency"></label>
+                    <div class="currency">
+                        <select class=" mr_l30" name="" id="currency">
+                            <option value="USD">USD</option>
+                            <option value="AMD" selected>AMD</option>
+                            <option value="RU">RU</option>
+                        </select>
+                    </div>
                 </div>
             </div>
             <div class="filters">
@@ -84,45 +87,55 @@
                     <div class="form">
                         <div class="row1 jc_between df">
                             <div class="renting">
-                                <p>Renting</p>
-                                <select class="select" name="rent" id="rent">
-                                    <option value="daily">Daily</option>
-                                    <option value="weekly">Weekly</option>
-                                    <option value="monthly" selected>Monthly</option>
-                                </select>
+                                <label for="rent">Renting</label>
+                                <div class="select">
+                                    <select name="rent" id="rent">
+                                        <option value="daily">Daily</option>
+                                        <option value="weekly">Weekly</option>
+                                        <option value="monthly" selected>Monthly</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="city">
-                                <p>City</p>
-                                <select class="select" id="city" name="city">
-                                    <option value="Yerevan" selected>Yerevan</option>
-                                    <option value="Gyumri" selected>Gyumri</option>
-                                    <option value="Vanadzor" selected>Vanadzor</option>
-                                </select>
+                                <label for="city">City</label>
+                                <div class="select">
+                                    <select  id="city" name="city">
+                                        <option value="Yerevan" selected>Yerevan</option>
+                                        <option value="Gyumri" selected>Gyumri</option>
+                                        <option value="Vanadzor" selected>Vanadzor</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="region">
-                                <p>Region</p>
-                                <select class="select" name="region" id="region">
-                                    <option value="select" hidden> Select</option>
+                                <label for="region">Region</label>
+                                <div class="select">
+                                    <select  name="region" id="region">
+                                        <option value="select" hidden> Select</option>
 
-                                    <optgroup label="Yerevan">
-                                        <option value="Avan">Avan</option>
-                                        <option value="Nor-Norq">Nor-Norq</option>
-                                        <option value="Ajapnyak">Ajapnyak</option>
-                                    </optgroup>
-                                    <option value="Shirak">Shirak</option>
-                                    <option value="Lori">Lori</option>
-                                </select>
+                                        <optgroup label="Yerevan">
+                                            <option value="Avan">Avan</option>
+                                            <option value="Nor-Norq">Nor-Norq</option>
+                                            <option value="Ajapnyak">Ajapnyak</option>
+                                        </optgroup>
+                                        <option value="Shirak">Shirak</option>
+                                        <option value="Lori">Lori</option>
+                                    </select>
+                                </div>
+
                             </div>
                             <div class="rooms">
-                                <p>Rooms</p>
-                                <select class="select" name="rooms" id="rooms">
-                                    <option value="select" hidden>Select</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
+                                <label for="rooms">Rooms</label>
+                                <div class="select">
+                                    <select  name="rooms" id="rooms">
+                                        <option value="select" hidden>Select</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+
                             </div>
                             <div class="search">
                                 <button>SEARCH</button>
@@ -130,29 +143,33 @@
                         </div>
                         <div class="row1 jc_between df">
                             <div class="price">
-                                <p>Price</p>
+                                <label for="price">Price</label>
                                 <div class="df">
                                     <div class="df">
-                                        <input type="number" min="100" placeholder="100$">
+                                        <input id="price" type="number" min="100" placeholder="100$">
                                     </div>
                                 </div>
                             </div>
                             <div class="df">
-                                <input type="number" min="100" placeholder="100$">
+                                <label for="price1"></label>
+                                <input id="price1" type="number" min="100" placeholder="100$">
                             </div>
                             <div class="code">
-                                <p>Code</p>
-                                <input type="text" placeholder="REUY345">
+                                <label for="code">Code</label>
+                                <input id="code" type="text" placeholder="REUY345">
                             </div>
                             <div class="layout w140">
-                                <p>Layout</p>
-                                <select class="select" name="Layout" id="layout">
-                                    <option value="select" hidden>Select</option>
-                                    <option value="New building">New building</option>
-                                    <option value="Khrushchov project">Khrushchov project</option>
-                                    <option value="Stalin project">Stalin project</option>
-                                </select>
-                            </div>
+                                <label for="layout">Layout</label>
+                                <div class="select">
+                                    <select  name="Layout" id="layout">
+                                        <option value="select" hidden>Select</option>
+                                        <option value="New building">New building</option>
+                                        <option value="Khrushchov project">Khrushchov project</option>
+                                        <option value="Stalin project">Stalin project</option>
+                                    </select>
+                                </div>
+                                </div>
+
                             <div>
 
                             </div>

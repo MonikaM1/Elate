@@ -19,12 +19,8 @@
 
 header {
     background-color: #f4f4f4;
+    width: 100%;
 }
-
-/*.header_top {*/
-/*    position: fixed;*/
-/*    z-index: 2;*/
-/*}*/
 
 header, footer {
     font-size: 16px;
@@ -440,8 +436,7 @@ footer {
         position: relative;
         margin-bottom: 20px;
     }
-
-    .house .txt {
+    .offer:nth-child(2) .txt {
         z-index: 1;
         left: 99px;
     }
