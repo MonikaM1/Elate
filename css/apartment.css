@@ -82,7 +82,7 @@ select, input {
 }
 
 button {
-    padding: 15px;
+    padding: 10px ;
 }
 
 .container1 {
@@ -109,14 +109,20 @@ button {
 
 .apartment_description {
     margin-bottom: 50px;
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow: 0 0 5px 1px #ececec;
+    height: 300px;
 }
 
 .description {
     max-width: 600px;
     margin: 0 auto;
 }
+.app_price{
+    font-weight: bold;
+    line-height: 20px;
+}
+
 
 .description > div {
     line-height: 22px;
@@ -147,8 +153,7 @@ button {
 }
 
 .street {
-    display: flex;
-    align-items: flex-end;
+    font-size: 25px;
 }
 
 .w100 {
