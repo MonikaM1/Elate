@@ -9,8 +9,8 @@
 }
 
 .slider_image_small {
-    width: 230px;
-    height: 140px;
+    height: auto;
+    padding: 10px;
 }
 
 .slider_image {
@@ -19,12 +19,6 @@
 
 .slider_images {
     padding: 10px 0;
-}
-
-.icon {
-    position: absolute;
-    width: 98%;
-    top: 270px;
 }
 
 .icon i {
@@ -43,40 +37,53 @@
     color: black;
 }
 
-.more p::after {
-    content: "";
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
-    position: absolute;
-    right: -20px;
-    top: 2px;
-
-}
 
 .txt_container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 50px 0;
 }
-.column{
+
+.column {
     line-height: 25px;
 }
-.contactus{
+
+.contactus {
     padding: 50px 0;
 }
-.call_button{
+
+.call_button {
     width: 200px;
     display: flex;
     align-items: center;
 }
-.call_button img{
+
+.call_button img {
     margin-right: 10px;
     width: 30px;
 }
-.arrow{
+
+.call_button:first-child {
+    margin-bottom: 10px;
+}
+
+.txt_container:first-child {
+    font-weight: bold;
+}
+
+.call_button {
+    border-radius: 20px;
+    background-color: #ffb400;
+    font-weight: 700;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: .5s;
+    width: 200px;
+    color: #000000;
+}
+
+.arrow {
     font-weight: 700;
     width: 30px;
     height: 30px;
@@ -88,21 +95,42 @@
     background: white;
     cursor: pointer;
 }
-.arrow:hover{
+
+.arrow:hover {
     opacity: 80%;
 }
-.contact_us_call{
+
+.more .select select {
+    box-shadow: unset;
+}
+
+.more .select::after {
+    content: "";
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 15px;
+    top: 2px;
+}
+
+.contact_us_call {
     width: 100%;
     justify-content: space-between;
 }
-.contact_us_call .app_price{
+
+.contact_us_call .app_price {
     align-self: center;
     line-height: 30px;
 }
-.contact_us_social{
+
+.contact_us_social {
     max-width: 400px;
     justify-content: space-evenly;
 }
-.contact_us_social .icons a{
+
+.contact_us_social .icons a {
     margin-right: 10px;
 }
