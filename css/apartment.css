@@ -23,6 +23,10 @@
 .hover{
     border-bottom: 3px solid #ffb400;
 }
+.search{
+    height: fit-content;
+
+}
 
 .select,.currency{
     position: relative;
@@ -68,7 +72,7 @@ select, input {
     border: none;
     box-shadow: 0 0 5px 1px #ececec;
     border-radius: 30px;
-    padding: 15px;
+    padding:15px;
     cursor: pointer;
 
 }
@@ -111,7 +115,6 @@ button {
     margin-bottom: 50px;
     border-radius: 20px;
     box-shadow: 0 0 5px 1px #ececec;
-    height: 300px;
 }
 
 .description {
@@ -163,6 +166,18 @@ button {
 form {
     padding: 50px 0;
 }
+.form{
+    display: flex;
+    justify-content: space-between;
+}
+.form_parts{
+    flex-grow: 0.8;
+}
+.price:nth-child(2) label{
+color: white;
+}
+
+
 
 @media screen and (min-width: 1600px)and (max-width: 1919px) {
 
@@ -180,27 +195,31 @@ form {
 
 @media screen and (min-width: 768px)and (max-width: 1023px) {
 
-    .description {
-        max-width: 300px;
+   .form{
+       flex-direction: column;
+   }
+    .description{
+        max-width: 350px;
     }
-
-    .row1 {
-        flex-direction: column;
-    }
-
-    .row1 > div {
-        width: 140px;
-    }
-
-    .form {
-        display: flex;
-        justify-content: space-around;
-    }
-
 
 }
 
 @media screen and (min-width: 320px)and (max-width: 767px) {
+    .form{
+        flex-direction: column;
+        max-width: 500px;
+        margin: 0 auto;
+        align-self: center;
+    }
+    .row1{
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .search{
+        display: flex;
+        justify-content: center;
+    }
     .description {
         max-width: 300px;
         left: 15px;
@@ -219,10 +238,6 @@ form {
 
     .apartment_description {
         position: relative;
-    }
-
-    .row1 {
-        flex-direction: column;
     }
 
     .form {
@@ -254,15 +269,6 @@ form {
         flex-wrap: wrap;
         justify-content: space-around;
     }
-
-    .apartment_description {
-        max-width: 310px;
-    }
-
-    .img {
-        width: 100%;
-    }
-
 
     .description {
         position: absolute;

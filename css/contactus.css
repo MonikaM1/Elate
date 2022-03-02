@@ -1,0 +1,6 @@
+.block_col ul li{
+    color: black!important;
+}
+.block_col>div>div:nth-child(2){
+flex-grow: 0.8;
+}

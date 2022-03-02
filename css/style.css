@@ -112,7 +112,7 @@ nav li a:hover {
 }
 
 
-main {
+.main {
     font-size: 14px;
 }
 
@@ -132,7 +132,7 @@ main {
     justify-content: center;
 }
 
-.txt p, button {
+.txt p{
     margin-top: 20px;
 }
 
@@ -283,12 +283,15 @@ footer {
 
 @media screen and (min-width: 768px)and (max-width: 1023px) {
     .container {
-        max-width: 780px;
+        max-width: 750px;
     }
 
     .nav_menu nav li {
         margin-right: 15px;
         position: relative;
+    }
+    header nav li {
+        margin-left: 15px;
     }
 
     header, footer {
@@ -341,7 +344,12 @@ footer {
     .header_top {
         justify-content: space-around;
     }
-
+    .main{
+    font-size: 12px
+}
+.txt p{
+    line-height:25px ;
+}
     .menu {
         display: none;
     }
@@ -358,7 +366,11 @@ footer {
     .footer_nav_menu nav ul {
         text-align: center;
     }
-
+    .footer_nav_menu nav {
+        width: 180px;
+        justify-content: center;
+        flex-direction: column;
+    }
     .mr_bottom20 {
         margin-bottom: 20px;
     }
@@ -438,7 +450,7 @@ footer {
     }
     .offer:nth-child(2) .txt {
         z-index: 1;
-        left: 99px;
+        left: 10px;
     }
 
     .img {
@@ -455,7 +467,7 @@ footer {
 
     .txt p {
         color: white;
-        line-height: 30px;
+        line-height: 20px;
         margin-top: 5px;
     }
 

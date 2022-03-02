@@ -10,8 +10,12 @@
 
 .slider_image_small {
     height: auto;
-    padding: 10px;
+    padding: 10px 0 10px 10px;
 }
+.slider_image_small:first-child{
+    padding-left: unset;
+}
+
 
 .slider_image {
     position: relative;
@@ -53,11 +57,31 @@
 }
 
 .call_button {
-    width: 200px;
+    border-radius: 20px;
+    background-color: #ffb400;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+    color: #000000;
     display: flex;
-    align-items: center;
+    position: relative;
+    line-height: 50px;
+    justify-content: center;
+    width: 220px;
 }
+.call_button::before{
+    content: '';
+    background-image: url("../images/whatsapp-brands.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 20px;
+    top: 10px;
 
+}
 .call_button img {
     margin-right: 10px;
     width: 30px;
@@ -71,18 +95,19 @@
     font-weight: bold;
 }
 
-.call_button {
-    border-radius: 20px;
-    background-color: #ffb400;
-    font-weight: 700;
-    border: none;
-    padding: 5px 15px;
-    cursor: pointer;
-    transition: .5s;
-    width: 200px;
-    color: #000000;
+.slider_image{
+    height: 600px;
+    background-image: url("../images/app.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
-
+.arrows{
+    display: flex;
+    width: 1170px;
+    justify-content: space-between;
+    align-items: center;
+}
 .arrow {
     font-weight: 700;
     width: 30px;
@@ -133,4 +158,46 @@
 
 .contact_us_social .icons a {
     margin-right: 10px;
+}
+
+@media screen and (min-width: 1600px)and (max-width: 1919px) {
+
+
+}
+@media screen and (min-width: 1024px)and (max-width: 1599px) {
+
+.txt_container{
+    max-width: 870px;
+}
+    .arrows{
+        width: 950px;
+    }
+}
+@media screen and (min-width: 768px)and (max-width: 1023px) {
+
+    .txt_container{
+        max-width: 720px;
+    }
+    .arrows{
+        width: 700px;
+    }
+}
+@media screen and (min-width: 480px)and (max-width: 767px) {
+    .txt_container{
+        max-width: 570px;
+    }
+    .txt_container .column li{
+        font-size: 12px;
+
+    }
+.apartment_description{
+    min-width: 310px;
+}
+}
+@media screen and (min-width: 480px)and (max-width: 767px) {
+
+    .txt_container .column li{
+        font-size: 12px;
+
+    }
 }
