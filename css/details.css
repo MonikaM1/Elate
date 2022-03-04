@@ -43,18 +43,27 @@
 
 .columns{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-.txt_container {
-    margin: 0 auto;
-    padding: 50px 0;
+.apartment_description{
+    display: flex;
+    justify-content: center;
 }
 
+.columns-container{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 0;
+
+
+}
+.columns-container h3{
+    color: black!important;
+}
 .column {
     line-height: 25px;
-}
-.available{
-    flex-grow: 0.4;
 }
 
 .contactus {
@@ -96,7 +105,7 @@
     margin-bottom: 10px;
 }
 
-.txt_container:first-child {
+.columns-container:first-child {
     font-weight: bold;
 }
 
@@ -170,9 +179,8 @@
 
 }
 @media screen and (min-width: 1024px)and (max-width: 1599px) {
-
-.txt_container{
-    max-width: 870px;
+.columns-container{
+    width: 920px;
 }
     .arrows{
         width: 950px;
@@ -180,29 +188,30 @@
 }
 @media screen and (min-width: 768px)and (max-width: 1023px) {
 
-    .txt_container{
-        max-width: 720px;
+    .columns-container{
+        width: 720px;
     }
     .arrows{
         width: 700px;
     }
 }
-@media screen and (min-width: 480px)and (max-width: 767px) {
-    .txt_container{
-        max-width: 570px;
+@media screen and (min-width: 320px)and (max-width: 767px) {
+    .container{
+        max-width: 560px;
+
     }
-    .txt_container .column li{
+
+    .contact_us_social p {
+        display: none;
+    }
+
+    .column li {
         font-size: 12px;
 
     }
-.apartment_description{
-    min-width: 310px;
-}
-}
-@media screen and (min-width: 480px)and (max-width: 767px) {
 
-    .txt_container .column li{
-        font-size: 12px;
-
+    .apartment_description {
+        min-width: 310px;
     }
+
 }
