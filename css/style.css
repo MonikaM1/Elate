@@ -340,7 +340,9 @@ footer {
 }
 
 @media screen and (min-width: 320px)and (max-width: 767px) {
-
+.offer{
+    max-width: 100%;
+}
     .header_top {
         justify-content: space-around;
     }
