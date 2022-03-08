@@ -125,6 +125,7 @@ nav li a:hover {
     margin-bottom: 80px;
 }
 
+
 .txt {
     max-width: 400px;
     display: flex;
@@ -136,9 +137,7 @@ nav li a:hover {
     margin-top: 20px;
 }
 
-.txt p {
-    text-align: justify;
-}
+
 
 .mr_l90 {
     margin-left: 90px;
@@ -154,7 +153,7 @@ nav li a:hover {
 
 .img {
     border-radius: 10px;
-    width: 500px;
+  width: 600px;
     height: 100%;
     cursor: pointer;
 }
@@ -278,6 +277,9 @@ footer {
         width: 220px;
 
     }
+    .img{
+        width: 500px;
+    }
 
 }
 
@@ -320,6 +322,7 @@ footer {
 
     .txt_width {
         width: 100%;
+        justify-content: center;
     }
 
     button {
@@ -340,18 +343,9 @@ footer {
 }
 
 @media screen and (min-width: 320px)and (max-width: 767px) {
-.offer{
-    max-width: 100%;
-}
-    .header_top {
-        justify-content: space-around;
+    .main,.header_top{
+        padding: 0 10px;
     }
-    .main{
-    font-size: 12px
-}
-.txt p{
-    line-height:25px ;
-}
     .menu {
         display: none;
     }
@@ -360,7 +354,24 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-
+    .welcome p{
+        text-align: justify;
+    }
+.offer div{
+    flex-direction: column
+}
+.offer div:first-child div:nth-child(2),.houses{
+    align-items:start;
+}
+.img{
+    margin-bottom: 20px;
+}
+.img,.img img{
+    max-width: 100%;
+}
+.houses{
+    flex-direction: column-reverse!important;
+}
     .footer_logo {
         margin: 0 auto;
     }
@@ -429,9 +440,9 @@ footer {
         background: #f4f4f4;
     }
 
-    .welcome p {
-        padding: 40px;
-    }
+    /*.welcome p {*/
+    /*    padding: 40px;*/
+    /*}*/
 
     .button {
         width: 95px;
@@ -440,35 +451,10 @@ footer {
         margin-top: 5px;
     }
 
-    .offers {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
 
-    .offer {
-        position: relative;
-        margin-bottom: 20px;
-    }
-    .offer:nth-child(2) .txt {
-        z-index: 1;
-        left: 10px;
-    }
-
-    .img {
-        opacity: 60%;
-        filter: brightness(0.5);
-    }
-
-    .txt {
-        position: absolute;
-        left: 25px;
-        top: 5px;
-
-    }
 
     .txt p {
-        color: white;
+
         line-height: 20px;
         margin-top: 5px;
     }
