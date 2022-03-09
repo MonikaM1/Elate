@@ -51,11 +51,13 @@
 }
 
 .columns-container{
-    width: 1000px;
+
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 20px 0;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+
 
 
 }
@@ -105,22 +107,8 @@
     margin-bottom: 10px;
 }
 
-.columns-container:first-child {
+.columns-container>div:first-child {
     font-weight: bold;
-}
-
-.slider_image{
-    height: 600px;
-    background-image: url("../images/app.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-}
-.arrows{
-    display: flex;
-    width: 1170px;
-    justify-content: space-between;
-    align-items: center;
 }
 .arrow {
     font-weight: 700;
@@ -128,11 +116,18 @@
     height: 30px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px 5px rgba(134, 134, 134, 0.25);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: white;
     cursor: pointer;
+}
+.arrow-left{
+    position: absolute;
+    left: 10px;
+    top: 300px;
+}
+.arrow-right{
+    position: absolute;
+    right: 10px;
+    top: 300px;
 }
 
 .arrow:hover {
@@ -179,39 +174,39 @@
 
 }
 @media screen and (min-width: 1024px)and (max-width: 1599px) {
-.columns-container{
-    width: 920px;
-}
-    .arrows{
-        width: 950px;
-    }
+   .arrow-right, .arrow-left{
+       top: 250px;
+   }
 }
 @media screen and (min-width: 768px)and (max-width: 1023px) {
 
-    .columns-container{
-        width: 720px;
-    }
-    .arrows{
-        width: 700px;
+    .arrow-right, .arrow-left{
+        top: 200px;
     }
 }
 @media screen and (min-width: 320px)and (max-width: 767px) {
-    .container{
-        max-width: 560px;
-
+    .arrow-right, .arrow-left{
+        top: 80px;
     }
-
+.contactus{
+    flex-direction: column;
+}
     .contact_us_social p {
         display: none;
     }
-
-    .column li {
-        font-size: 12px;
-
+    .contact_us_call{
+        margin-bottom: 20px;
     }
 
-    .apartment_description {
-        min-width: 310px;
+    .column{
+        margin-bottom: 20px;
+    }
+    .columns{
+        flex-wrap: wrap;
+    }
+    .column{
+        width: 210px;
+
     }
 
 }

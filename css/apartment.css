@@ -169,18 +169,20 @@ flex: 0.8;
 }
 
 .rent {
-    width: 80px;
+   width: fit-content;
     justify-content: flex-end;
 }
 
 .color {
-    color: #18de55;
+    color: #33D185;
 }
-
-.street {
-    font-size: 25px;
+.street{
+    height: 25px;
 }
-
+.street h5{
+    align-self: end;
+    margin-left: 5px;
+}
 .w100 {
     width: 100%;
 }
@@ -241,8 +243,10 @@ form {
 
     .row1 {
         flex-wrap: wrap;
-        justify-content: center;
 
+    }
+    .row1 div:nth-child(odd){
+        margin-right: 5px;
     }
 
     .search {
@@ -304,7 +308,9 @@ form {
     .description_par {
         padding: 20px;
     }
-
+.description>div{
+    margin-bottom: 20px;
+}
     .description_par .img {
         width: 100%;
     }
