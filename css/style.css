@@ -162,7 +162,11 @@ nav li a:hover {
     color: #000000;
 
 }
-
+.inner{
+    display: flex;
+    flex-grow: 0.8;
+    justify-content: space-between;
+}
 .button {
     border-radius: 20px;
     background-color: #ffb400;
@@ -281,7 +285,9 @@ footer {
     }
 
 }
-
+.d-none{
+    display: none;
+}
 @media screen and (min-width: 768px)and (max-width: 1023px) {
     .container {
         max-width: 750px;
@@ -342,8 +348,8 @@ footer {
 }
 
 @media screen and (min-width: 320px)and (max-width: 767px) {
-    .main,.header_top{
-        padding: 0 10px;
+    .container{
+        padding: 20px;
     }
     .menu {
         display: none;
@@ -354,6 +360,7 @@ footer {
         align-items: flex-start;
     }
     .welcome p{
+        padding-left: 40px;
         text-align: justify;
     }
     .button{
